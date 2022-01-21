@@ -96,7 +96,7 @@ function checkPlatform(platform: string, fileName: string) {
       fileName.includes("darwin") ||
       fileName.includes("osx")) &&
     (extension === "gz" || 
-      extension === 'app') &&
+      extension === "app") &&
     platform === AVAILABLE_PLATFORMS.MacOS
   ) {
     return "darwin";
@@ -106,7 +106,7 @@ function checkPlatform(platform: string, fileName: string) {
   if (
     (fileName.includes("x64") || fileName.includes("win64")) &&
     (extension === "zip" || 
-    extension === 'msi') &&
+    extension === "msi") &&
     platform === AVAILABLE_PLATFORMS.Win64
   ) {
     return "win64";
@@ -116,7 +116,7 @@ function checkPlatform(platform: string, fileName: string) {
   if (
     (fileName.includes("x32") || fileName.includes("win32")) &&
     (extension === "zip" ||
-    extension === 'msi') &&
+    extension === "msi") &&
     platform === AVAILABLE_PLATFORMS.Win32
   ) {
     return "win32";
@@ -126,7 +126,7 @@ function checkPlatform(platform: string, fileName: string) {
   if (
     fileName.includes("AppImage") &&
     (extension === "gz" ||
-     extension === 'AppImage') && 
+     extension === "Appimage") && 
     platform === AVAILABLE_PLATFORMS.Linux
   ) {
     return "linux";
