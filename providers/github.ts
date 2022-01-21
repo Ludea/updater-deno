@@ -96,7 +96,7 @@ function checkPlatform(platform: string, fileName: string) {
       fileName.includes("darwin") ||
       fileName.includes("osx")) &&
     (extension === "gz" || 
-      extension === 'app) &&
+      extension === 'app') &&
     platform === AVAILABLE_PLATFORMS.MacOS
   ) {
     return "darwin";
